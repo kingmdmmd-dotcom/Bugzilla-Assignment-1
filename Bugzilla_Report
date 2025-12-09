@@ -1,0 +1,27 @@
+Bug Report Example (From Mozilla Bugzilla)
+
+Bug ID: 1806079
+Title: “Firefox crashes when switching tabs rapidly”
+Product: Firefox
+Component: Tabbed Browser
+Status: NEW
+Severity: Major
+Reported by: janus@mozilla.org
+
+Description:
+When switching between tabs very quickly (Ctrl+Tab) Firefox crashes unexpectedly.
+Crash reports show signatures related to nsWindow::DispatchEvent.
+
+Steps to Reproduce:
+
+Open 10+ tabs.
+
+Hold down Ctrl+Tab for continuous tab switching.
+
+Browser crashes after ~5–10 seconds.
+
+Expected Result:
+Browser should switch between tabs without crashing.
+
+Actual Result:
+Firefox crashes and restarts with crash reporter.
